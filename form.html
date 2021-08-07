@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html language="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+
+    <link rel="stylesheet" href="css\styles.css">
+
+
+
+</head>
+<body>
+    <form action="mailto:aamir81201@gmail.com" method="POST" enctype="text/plain">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label for="name">Name:</label><input type="text" name="name" id="name">
+            </p>
+            
+            <p>
+                <label for="email">Email:</label><input type="email" name="email" id="email" placeholder="yourname@domain.com">
+            </p>
+    
+            <p>
+                <label for="password">Password:</label><input type="password" name="password" id="password">
+            </p>
+    
+            <p>
+                Gender:
+                <input type="radio" name="Gender" id="M" value="Male"><label for="M">Male</label>
+                <input type="radio" name="Gender" id="F" value="Female"><label for="F">Female</label>
+                <input type="radio" name="Gender" id="O" value="Other"><label for="O">Other</label>
+            </p>
+    
+            <p>
+                <label for="dob">Date Of Birth:</label><input type="date" name="dob" id="dob">
+            </p>
+      
+            <p>
+                <label for="age">Age:</label><input type="number" name="age" id="age" step="1" placeholder="18+" min="18" max="45">
+            </p>
+           
+            <p>
+                <label for="collage">College Name:</label>
+                <input type="search" list="collage_name" name="collage" id="collage" />
+                <datalist id="collage_name">
+                    <option value="Gec, Patan">
+                    <option value="Gec, Modasa">
+                    <option value="Gec, Gandhinagar">
+                    <option value="Gec, Palanpur">
+                    <option value="Gec, Dahod">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="address">Address:</label><br>
+                <textarea name="address" id="address" cols="20" rows="3"></textarea>
+            </p>
+    
+        </fieldset>
+    
+        <fieldset>
+            <legend>Select your Programming Languages</legend>
+            <div>
+                <input type="checkbox" name="language" id="Python" value="Python"><label for="language">Python</label><br>
+                <input type="checkbox" name="language" id="Java" value="Java"><label for="language">Java</label><br>
+                <input type="checkbox" name="language" id="C" value="C"><label for="language">C</label><br>
+                <input type="checkbox" name="language" id="C++" value="C++"><label for="language">C++</label>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Choose Theme:</legend>
+            <table cellspacing = "5">
+                <tr>
+                    <td><input type="color" name="font" id="font"></td><td><label for="font">Font </label></td>
+                </tr>
+                <tr>
+                    </td><td><input type="color" name="background" id="background" value="#ffffff"></td><td><label for="background">Background</label>
+                </tr>
+            </table>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Display</legend>
+            <table>
+                <tr>
+                    <td><lable for="brightness">Brightness</lable></td><td><input type="range" name="brightness" id="brightness"></td>
+                </tr>
+                <tr>
+                    <td><label for="contrast">Contrast</label></td><td><input type="range" name="contrast"></td>
+                </tr>
+                <tr>
+                    <td><label for="saturation">Saturation</label></td><td><input type="range" name="saturation"></td>
+                </tr>
+    
+            </table>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Upload Documents</legend>
+            <table cellspacing = "3">
+                    <tr>
+                        <td><label for="adhaar">Adhhar Card:</label></td><td><input type="file" name="adhaar" id="adhaar"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pan">PAN Card:</label></td><td><input type="file" name="pan" id="pan"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="id">Id Card:</label></td><td><input type="file" name="id" id="id"></td>
+                    </tr>
+            </table>
+        </fieldset>
+        
+        <center>
+            <input type="button" value="Save">
+            <input type="reset">
+            <input type="submit" name="submit" id="submit">
+        </center>
+    
+    </form>
+</body>
+</html>
